@@ -1,6 +1,7 @@
 # DVME - Darn Vulnerable MediaWiki Extension
 
-!!! FOR TESTING PURPOSES ONLY!
+:bangbang: | FOR TESTING PURPOSES ONLY!
+:---: | :---
 
 This is a darn vulnerable [MediaWiki extension](https://www.mediawiki.org/wiki/Manual:Extensions).  It is for testing purposes only!
 For the love of [wikitext](https://www.mediawiki.org/wiki/Wikitext), DO NOT RUN THIS on any production system that you care
