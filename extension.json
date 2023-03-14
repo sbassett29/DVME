@@ -1,0 +1,34 @@
+{
+	"name": "DVME",
+	"author": [
+		"Scott Bassett"
+	],
+	"url": "https://github.com/sbassett29/DVME",
+	"descriptionmsg": "Darn Vulnerable MediaWiki Extension",
+	"license-name": "Apache-2.0",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"config": {
+		"DVMEConfig": {
+			"description": "Maybe Something",
+			"value": true
+		}
+	},
+	"MessagesDirs": {
+		"Example": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ExampleAlias": "DVME.i18n.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\DVME\\": "includes/"
+	},
+	"SpecialPages": {
+		"XSS": "MediaWiki\\Extension\\DVME\\SpecialXSS",
+		"SQLi": "MediaWiki\\Extension\\DVME\\SpecialSQLi"
+	}
+}
