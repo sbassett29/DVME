@@ -7,6 +7,8 @@
 
 namespace MediaWiki\Extension\DVME;
 
+use MediaWiki\MediaWikiServices;
+
 class SpecialSQLi extends \FormSpecialPage {
 
 	private $status;
@@ -60,6 +62,12 @@ class SpecialSQLi extends \FormSpecialPage {
 	 * onSubmit
 	 */
 	public function onSubmit( array $data ) {
+		# try db insert
+		$lb = MediaWikiServices::getInstance()->getDBLoadBalancer();
+		$dbw = $lb->getConnectionRef( DB_PRIMARY );
+
+		
+
 		$out = $this->getOutput();
 		$html = "hello";
 		$out->addHTML ( $html );
