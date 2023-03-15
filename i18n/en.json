@@ -6,5 +6,9 @@
 	},
 	"dvme-desc": "This is a darn vulnerable mediawiki extension!",
 	"dvme-xss-title": "A page with XSS vulns, oh my!",
-	"dvme-sqli-title": "A page with SQLi vulns, oh my!"
+	"dvme-xss-title-short": "Special XSS",
+	"dvme-xss-favorite-color": "Your favorite color:",
+	"dvme-sqli-title": "A page with SQLi vulns, oh my!",
+	"dvme-sqli-title-short": "Special SQLi",
+	"dvme-sqli-favorite-database": "Your favorite database:"
 }
