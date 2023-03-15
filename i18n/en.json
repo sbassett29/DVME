@@ -1,16 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alangi Derick",
-			"Brad Jorsch",
-			"Siebrand Mazeland",
-			"Timo Tijhof"
+			"Scott Bassett"
 		]
 	},
-	"example-desc": "This is an example extension using the BoilerPlate.",
-	"example-welcome-title-user": "Howdy $1, today is a fine $2!",
-	"example-welcome-title-loggedout": "Hi there, today is a fine $2!",
-	"example-helloworld": "Bar",
-	"example-helloworld-intro": "This is the HelloWorld special page, as provided by the Example extension.",
-	"contentaction-myact": "My action"
+	"dvme-desc": "This is a darn vulnerable mediawiki extension!",
+	"dvme-xss-title": "A page with XSS vulns, oh my!",
+	"dvme-sqli-title": "A page with SQLi vulns, oh my!"
 }

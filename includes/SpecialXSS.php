@@ -1,13 +1,13 @@
 <?php
 /**
- * HelloWorld Special page.
+ * DVME XSS Special page.
  *
  * @file
  */
 
-namespace MediaWiki\Extension\Example;
+namespace MediaWiki\Extension\DVME;
 
-class SpecialHelloWorld extends \SpecialPage {
+class SpecialXSS extends \SpecialPage {
 
 	/**
 	 * Initialize the special page.
@@ -16,26 +16,14 @@ class SpecialHelloWorld extends \SpecialPage {
 		// A special page should at least have a name.
 		// We do this by calling the parent class (the SpecialPage class)
 		// constructor method with the name as first and only parameter.
-		parent::__construct( 'HelloWorld' );
+		parent::__construct( 'XSS' );
 	}
 
 	/**
-	 * Shows the page to the user.
-	 * @param string $sub The subpage string argument (if any).
-	 *  [[Special:HelloWorld/subpage]].
+	 * Display page with XSS vulns
 	 */
-	public function execute( $sub ) {
+	public function execute() {
 		$out = $this->getOutput();
-
-		$out->setPageTitle( $this->msg( 'example-helloworld' ) );
-
-		// Parses message from .i18n.php as wikitext and adds it to the
-		// page output.
-		$out->addWikiMsg( 'example-helloworld-intro' );
-	}
-
-	/** @inheritDoc */
-	protected function getGroupName() {
-		return 'other';
+		$out->setPageTitle( $this->msg( 'dvme-xss-title' ) );
 	}
 }
